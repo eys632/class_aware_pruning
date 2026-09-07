@@ -1,0 +1,5 @@
+target_class,criterion,mean,std
+-1,activation,0.6338926553726196,
+-1,grad_x_activation,0.7118431329727173,
+-1,weight,0.4532881379127502,
+-1,weight_x_activation,0.6797118782997131,

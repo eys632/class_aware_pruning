@@ -1,0 +1,5 @@
+seed,target_class,criterion,spearman_vs_ablation
+0,-1,weight,0.45328813791275024
+0,-1,activation,0.6338926553726196
+0,-1,weight_x_activation,0.6797118782997131
+0,-1,grad_x_activation,0.7118431329727173
