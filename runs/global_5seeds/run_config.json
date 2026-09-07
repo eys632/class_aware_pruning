@@ -1,0 +1,58 @@
+{
+  "data_dir": "./data",
+  "out_dir": "runs/global_5seeds",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "split_seed": 1234,
+  "epochs": 25,
+  "batch_size": 2048,
+  "eval_batch_size": 16384,
+  "lr": 0.002,
+  "weight_decay": 0.0001,
+  "cal_size": 10000,
+  "topk_fraction": 0.2,
+  "pair_samples": 20000,
+  "prune_ratios": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5
+  ],
+  "methods": [
+    "random",
+    "weight",
+    "activation",
+    "weight_x_activation",
+    "grad_x_activation",
+    "ablation"
+  ],
+  "target_class": -1,
+  "fast_matmul": false,
+  "amp_bf16": false,
+  "latency": false,
+  "latency_batches": [
+    1,
+    256,
+    4096
+  ],
+  "latency_warmup": 100,
+  "latency_iters": 500,
+  "environment": {
+    "python": "3.12.14 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:46:43) [GCC 14.3.0]",
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "torch_cuda_runtime": "12.8",
+    "cuda_device": "NVIDIA GeForce RTX 5090",
+    "compute_capability": [
+      12,
+      0
+    ],
+    "CUDA_VISIBLE_DEVICES": "1"
+  }
+}
